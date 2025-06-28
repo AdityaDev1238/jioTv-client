@@ -1,10 +1,10 @@
 import React from 'react'
 import MoviesC from './MoviesC'
 
-function Movies({mov}) {
+function Movies() {
   return (
     <div>
-        
+         <h1>Movie Page</h1>
       <MoviesC/>
     </div>
   )

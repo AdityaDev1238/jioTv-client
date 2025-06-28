@@ -11,9 +11,24 @@ function ShowTypesC({ types }) {
                 return(
                     <>
                     
-                    <div key={e.index} className='iframe-wrapper'>
+                    {/* <div key={e.index} className='iframe-wrapper'>
                     <iframe  src={e.url}></iframe>
-                    </div>
+                    </div> */}
+
+                       <div key={e.id} className="card" >
+                                        <img
+                                            className="card-img-top"
+                                            src={e.iurl}
+                                            alt="Card image cap"
+                                            
+                                        />
+                                        <div className="card-body">
+                                            <h5 className="card-title">{e.title}</h5>
+                                            <Link to={e.url} className="btn btn-primary" target="_blank" rel="noreferrer">
+                                            Watch
+                                            </Link>
+                                        </div>
+                                        </div>
                     
                     
                     </>

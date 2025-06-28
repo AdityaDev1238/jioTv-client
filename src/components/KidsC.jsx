@@ -1,12 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
-function MoviesList({mov}){
-    return(
-        <div className='iframe-container'>
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+function KidsC({datas}) {
+  return (
+    <div className='iframe-container'>
 
             
             {
-            mov.map((e, index) =>{
+            datas.map((e, index) =>{
                 return(
                     <>
                     
@@ -43,8 +44,7 @@ function MoviesList({mov}){
         }
 
         </div>
-    )
+  )
 }
-export default MoviesList;
 
-// https://app.netlify.com/projects/jiotv-server/configuration/deploys
+export default KidsC

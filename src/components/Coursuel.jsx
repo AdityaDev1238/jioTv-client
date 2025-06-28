@@ -4,7 +4,7 @@ function Coursuel({cr}) {
   return (
     <div >
     
-    <div id="carouselExampleControls" className="carousel slide carousel-medium" data-ride="carousel">
+    <div id="carouselExampleControls" className="carousel slide carousel-medium" data-ride="carousel" data-interval="3000" >
     <div className="carousel-inner">
         {cr && cr.map((e, index) => (
             <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={e.id}>

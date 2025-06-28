@@ -7,10 +7,13 @@ function ShowsP() {
  const[channels,setChannels]=useState([])
 
   useEffect(()=>{
-     axios.get('http://localhost:8199/')
+     axios.get('http://localhost:8199/',{ withCredentials: true })
      .then((res)=>{
         setChannels(res.data)
      })
+     .catch((err)=>{
+      console.log(err)
+    })
   },[])
   
 
